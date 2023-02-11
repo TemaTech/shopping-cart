@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./Home";
+import { Shop } from "./Shop";
+import { Navbar } from "./Navbar";
+import { ShoppingBag } from "./ShoppingBag";
+import "./styles/app.css";
 
-function App() {
+export const App = () => {
+  const [shoppingBagVisible, setShoppingBagVisible] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BrowserRouter>
+        <Navbar setShoppingBag={setShoppingBagVisible} />
+        {shoppingBagVisible && (
+          <ShoppingBag setShoppingBag={setShoppingBagVisible} />
+        )}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
-export default App;
