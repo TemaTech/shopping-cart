@@ -11,7 +11,7 @@ export const Navbar = ({ setShoppingBag }) => {
       <div className="navigation">
         <Link to="/"><p>Home</p></Link>
         <Link to="/shop"><p>Catalog</p></Link>
-        <button onClick={() => setShoppingBag(true)}>
+        <button data-testid="shopping-bag-button" onClick={() => setShoppingBag(true)}>
           <FontAwesomeIcon icon={faShoppingBag} />
         </button>
       </div>
