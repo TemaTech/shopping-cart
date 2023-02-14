@@ -31,4 +31,47 @@
 .shopping-bag {
   background: white;
   width: 40%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 2vw;
+  justify-items: start;
+  align-items: center;
+  gap: 1vw;
+}
+
+.checkout-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  height: 70vh;
+  overflow-y: auto;
+  padding: 1vw;
+}
+
+.checkout-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-item-amount {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button#checkout {
+  border: .3vh solid black;
+  width: 100%;
+  padding: 1vh;
 }

@@ -4,6 +4,7 @@ import { Item } from "./Item";
 export const CheckoutItems = ({ products, decrementAmount, incrementAmount, total, calculateTotal }) => {
   return (
     <div className="checkout-items">
+      <div className="products">
       {
         products.map(product => (
           <Item
@@ -15,6 +16,7 @@ export const CheckoutItems = ({ products, decrementAmount, incrementAmount, tota
           />
         ))
       }
+      </div>
       <div className="total">
         <p>Total:</p>
         <p>${ total }</p>
