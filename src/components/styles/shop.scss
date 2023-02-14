@@ -1,0 +1,73 @@
+.shop {
+  padding: 3vh 5vw;
+  gap: 5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15vw);
+  place-items: center;
+  gap: 2vw;
+}
+
+.product-item {
+  background: white;
+  width: 15vw;
+  height: 30vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 1vw;
+}
+
+.preview {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  height: 20vh;
+  border-radius: 1vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+}
+
+p.name {
+  font-weight: bold;
+}
+
+p.price {
+  color: rgb(100, 100, 100);
+}
+
+.shopping-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button.add-to-shopping-bag {
+  background: black;
+  color: whitesmoke;
+  padding: 1vh;
+  border-radius: 1vh;
+  font-size: 2vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shopping-info div {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  align-items: center;
+  color: black;
+}
+
+.shopping-info div button {
+  color:  black;
+}

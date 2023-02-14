@@ -7,11 +7,13 @@ import "./styles/navbar.css";
 export const Navbar = ({ setShoppingBag }) => {
   return (
     <div className="navbar">
-      <Link to="/"><p>Colors</p></Link>
+      <Link to="/"><p>Chroma Haven</p></Link>
       <div className="navigation">
         <Link to="/"><p>Home</p></Link>
-        <Link to="/shop"><p>Shop</p></Link>
-        <button onClick={() => setShoppingBag(true)}><FontAwesomeIcon icon={faShoppingBag} /></button>
+        <Link to="/shop"><p>Catalog</p></Link>
+        <button onClick={() => setShoppingBag(true)}>
+          <FontAwesomeIcon icon={faShoppingBag} />
+        </button>
       </div>
     </div>
   );
